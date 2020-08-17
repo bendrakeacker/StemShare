@@ -1,35 +1,32 @@
 import React, { Component } from "react";
 import "./App.css";
 import Nav from "./components/Nav";
-import LoginCard from "./components/LoginCard";
-// import { BrowserRouter as Router, Route } from "react-router-dom";
+import Login from "./components/pages/Login";
+import Dashboard from "./components/pages/Dashboard"
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import AddButton from "./components/AddButton"
+import NewProject from "./components/pages/NewProject"
 // import Jumbotron from "./components/Jumbotron"
 // import List from "./components/List";
 
 import { Dropbox } from 'dropbox';
 
-const accessToken = '3fL2XK-4RgAAAAAAAAAAAXdn0GilqKuw2vMSCHi1nvj_QTbqcUouf-wnqCPvbaG8';
 
-const dbx = new Dropbox({  
-  accessToken,  
-  fetch  
-});
-
-dbx.filesListFolder({  
-  path: ''  
-}).then(response => console.log(response))
 
 
 function App() {
       return (
         
-          <>
+          <Router>
             <Nav />
-            <LoginCard />
+            <Route exact path="/" component={Login}/>
+            <Route exact path="/dashboard" component={Dashboard}/>
+            <Route exact path="/newproject" component={NewProject}/>
+
             {/* <List /> */}
      
       
-          </>
+          </Router>
       )
 }
   

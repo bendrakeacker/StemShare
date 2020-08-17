@@ -1,10 +1,32 @@
 import axios from "axios";
-const BASEURL = "";
-const APIKEY = "id7gfw8lk9f607v";
-
 export default {
-  search: function(query) {
-    return axios.get(BASEURL + query + APIKEY);
-  }
-};
+    getProjects: function (props) {
+        return axios
+      .get("https://api.github.com/orgs/github/public_members")
+      .then(res => {
+        console.log(props);
+        const users = res.data;
+        return users.map(user => {
+          return {
+            login: user.login,
+            image: user.avatar_url,
+            profileUrl: user.html_url
+          };
+        });
+      });
+            // dbx.filesListFolder({ path: '' })
+        //         .then(function (response) {
+        //             return (
+        //                 response.entries
+        //             )
 
+
+
+
+        //         })
+        //         .catch(function (error) {
+        //             console.error(error);
+        //         });
+        // }
+    }
+};
