@@ -4,8 +4,8 @@ import Nav from "./components/Nav";
 import Login from "./components/pages/Login";
 import Dashboard from "./components/pages/Dashboard"
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import AddButton from "./components/AddButton"
-import NewProject from "./components/pages/NewProject"
+
+
 // import CurrentProject from"./components/pages/CurrentProject";
 // import Jumbotron from "./components/Jumbotron"
 // import List from "./components/List";
@@ -22,7 +22,7 @@ function App() {
             <Nav />
             <Route exact path="/" component={Login}/>
             <Route exact path="/dashboard" component={Dashboard}/>
-            <Route exact path="/newproject" component={NewProject}/>
+           
             {/* <Route exact path="/currentproject" component={CurrentProject}/> */}
             {/* <List /> */}
      

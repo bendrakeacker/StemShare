@@ -1,9 +1,9 @@
 import React from "react";
 
 function Nav() {
-  return (
-    <>
-        <nav className="uk-navbar-container nav " >
+    return (
+        <>
+            {/* <nav className="uk-navbar-container nav " >
             <div className="uk-navbar-left title uk-text-center">
                 <h2 className="uk-text-center uk-padding-small">StemShare</h2>
             </div>
@@ -23,9 +23,13 @@ function Nav() {
                     <li><a href="#">Item</a></li>
                 </ul>
             </div> */}
-        </nav>
-    </>
-  );
+            {/* </nav> */} 
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">StemShare</a>
+            </nav>
+
+        </>
+    );
 }
 
 export default Nav;

@@ -7,7 +7,7 @@ function LoginCard() {
     <>
         <div className="uk-flex uk-flex-center uk-grid-medium uk-child-width-expand@s uk-text-center card uk-align-center">
             <div>
-                <div className="uk-card uk-card-default uk-card-body uk-width-1-2 uk-position-center">
+                <div className="uk-card uk-card-default uk-card-body uk-width-1-2 uk-position-center card">
                     <h2>WELCOME</h2>
 
                     <div>

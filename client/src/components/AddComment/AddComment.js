@@ -36,6 +36,7 @@ function AddComment(props) {
 
     return (
         <>
+            <div id="container">
             <h3>Notes</h3>
             <form>
                 <input type="text" name="name" placeholder="Name" className="form-control"
@@ -45,6 +46,8 @@ function AddComment(props) {
                 onChange={handleInputChange} value={comment.contents}></textarea>
                 <button className="btn btn-success" type="submit" onClick={handleFormSubmit}>Submit</button>
             </form>
+            </div>
+            
         </>
     );
 }
