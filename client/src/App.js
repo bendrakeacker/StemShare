@@ -21,10 +21,8 @@ function App() {
           <Router>
             <Nav />
             <Route exact path="/" component={Login}/>
-            <Route exact path="/dashboard" component={Dashboard}/>
+            <Route path="/dashboard" component={Dashboard}/>
            
-            {/* <Route exact path="/currentproject" component={CurrentProject}/> */}
-            {/* <List /> */}
      
       
           </Router>

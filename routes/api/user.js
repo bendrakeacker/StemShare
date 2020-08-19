@@ -3,7 +3,7 @@ const usersController = require("../../controllers/usersController");
 
 
 
-router.route("/")
+// router.route("/")
   
 
 
