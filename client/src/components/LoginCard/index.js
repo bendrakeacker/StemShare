@@ -15,8 +15,9 @@ function LoginCard() {
                         <br></br>
                         <input placeholder="password"></input>
                         <br></br> */}
-                        <a href={"https://www.dropbox.com/oauth2/authorize?client_id=" + apiKey + "&redirect_uri=http://localhost:3000/dashboard&response_type=code"}>Login with Dropbox</a>
+                        <a href={"https://www.dropbox.com/oauth2/authorize?client_id=" + apiKey + "&redirect_uri=https://ancient-shelf-77990.herokuapp.com/dashboard&response_type=code"}>Login with Dropbox</a>
                     </div>
+                    
                 </div>
             </div>
         </div>  
